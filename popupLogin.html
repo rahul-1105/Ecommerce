@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUpLogin</title>
+</head>
+<body>
+    <div id="popUp-overlay"></div>
+    <div id="login-form-container">
+        <button class="popUp-close" onclick="close_login()"><i class="fa-solid fa-xmark"></i></button>
+        <form action="" class="login-form">
+            <h3>Login</h3>
+            <div class="items">
+                <input type="email" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="items">
+                <input type="password" id="password" placeholder="Enter your Password">
+            </div>
+            <span><a href="#">Forgot Password?</a></span>
+            <div class="btn">
+                <input type="button" value="Login" onclick="login_alert()">
+            </div>
+            <span>Don't have an account?<a href="#">Register</a></span>
+        </form>
+    </div>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

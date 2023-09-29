@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUpContact</title>
+    <style>
+        /* --------PopUp Contact-------- */
+
+
+        .contact {
+            height: 500px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 1rem 3rem;
+            border-radius: 15px;
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
+            z-index: -1;
+            opacity: 0;
+            /* border: 2px solid red; */
+        }
+
+        .contact img {
+            width: 450px;
+            height: 300px;
+        }
+
+        .contact .divider {
+            height: 275px;
+            border-left: 2px solid rgba(43, 59, 74, .3);
+            margin-right: 50px;
+        }
+
+        .contact .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 21em;
+            width: 20em;
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
+            transition: box-shadow 0.5s;
+        }
+
+        .contact .form:hover {
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 20px;
+        }
+
+        .contact .form h3 {
+            color: #111;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .contact .items input {
+            font-size: 1rem;
+            color: rgb(20, 19, 19);
+            width: 16rem;
+            height: 2.25rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            padding: 2.25px 15px;
+            border: 1px solid rgba(43, 59, 74, .3);
+        }
+
+        .contact .btn input {
+            font-size: 18px;
+            width: 18rem;
+            height: 2.65rem;
+            border-radius: 50px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            background-color: #FC4F00;
+            transition: background-color .3s ease 0s;
+        }
+
+        .contact .btn input:hover {
+            background-color: rgb(200, 54, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="popUp-overlay"></div>
+    <div class="contact" id="contact">
+        <button class="popUp-close" onclick="close_contact()"><i class="fa-solid fa-xmark"></i></button>
+        <img src="images/11.jpg" alt="">
+        <div class="divider"></div>
+        <form action="form.php" class="form">
+            <h3>Contact Us</h3>
+            <div class="items">
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="items">
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="items">
+                <input type="text" name="messgae" id="messgae" placeholder="Enter your Message" required>
+            </div>
+            <div class="btn">
+                <input type="button" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

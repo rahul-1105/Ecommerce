@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Header</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-1">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo2.jpg" alt="logo"></a>
+                    <a href="index.html">
+                        <h1>Ecommerce</h1>
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Product name, Category name, etc.">
+                    <button>Search</button>
+                </div>
+                <div class="login">
+                    <button onclick="logout()" id="logout-btn" style="display: none;">Logout</button>
+                    <button onclick="show_login()" id="login-btn">Login</button>
+                    <a href="cart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            <div class="nav-2">
+                <ul class="nav-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="allProduct.html">All Product</a></li>
+                    <li><button class="dropdown-btn" onclick="dropdown_women()">Women<i
+                                class=" fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown">
+                            <ul class="dropdown-content" id="dropdown-women-links">
+                                <li><a href="allProduct.html">All Product</a></li>
+                                <li><a href="dresses.html">Dresses</a></li>
+                                <li><a href="womenJeans.html">Jeans</a></li>
+                                <li><a href="tops.html">Tops</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><button class="dropdown-btn" onclick="dropdown_men()">Men<i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown">
+                            <ul class="dropdown-content" id="dropdown-men-links">
+                                <li><a href="allProduct.html">All Product</a></li>
+                                <li><a href="oversizedT.html">OverSized T-Shirt</a></li>
+                                <li><a href="mensJeans.html">Jeans</a></li>
+                                <li><a href="cargo.html">Cargos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="#" onclick="show_contact()">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
